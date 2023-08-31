@@ -1,5 +1,13 @@
+import Bio from "../bio/Bio";
+import Socials from "../socials/Socials";
+
 const About = () => {
-  return <div>About</div>;
+  return (
+    <>
+      <Bio />
+      <Socials />
+    </>
+  );
 };
 
 export default About;
