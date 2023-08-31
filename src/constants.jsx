@@ -1,5 +1,5 @@
 // Section names
-export const SECTIONS = ["Biogram", "Najnowsze", "Publikacje"];
+export const SECTIONS = ["Biogram", "Publikacje"];
 
 export const BOOKS = [
   {
