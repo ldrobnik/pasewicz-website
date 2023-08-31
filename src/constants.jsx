@@ -1,6 +1,31 @@
 // Section names
 export const SECTIONS = ["Biogram", "Publikacje"];
 
+export const BIO = (
+  <>
+    <strong>Edward Pasewicz</strong> sit, amet consectetur adipisicing elit.
+    Excepturi in delectus necessitatibus eveniet voluptas placeat optio et quam
+    ullam! Excepturi in delectus necessitatibus eveniet voluptas placeat optio
+    et quam ullam! Excepturi in delectus necessitatibus eveniet voluptas placeat
+    optio et quam ullam!
+  </>
+);
+
+export const SOCIALS = [
+  {
+    name: "Facebook",
+    url: "https://www.facebook.com/edward.pasewicz",
+  },
+  {
+    name: "Instagram",
+    url: "https://instagram.com/edward.pasewicz",
+  },
+  {
+    name: "LinkedIn",
+    url: "https://www.linkedin.com/in/edward-pasewicz-3626b3aa",
+  },
+];
+
 export const BOOKS = [
   {
     title: "Darkslide",
