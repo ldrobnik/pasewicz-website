@@ -8,7 +8,7 @@ const BookList = () => {
       <div>Book List</div>
       {BOOKS?.length > 0 ? (
         <div>
-          {BOOKS.map((book) => (
+          {BOOKS.sort((a, b) => (a.year < b.year ? 1 : -1)).map((book) => (
             <BookCard key={book.title} book={book} />
           ))}
         </div>
