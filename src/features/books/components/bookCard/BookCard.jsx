@@ -2,21 +2,14 @@ const BookCard = ({ book }) => {
   return (
     <div className="book">
       <p>_________________________________________________</p>
-      <p>{book[0]}</p>
-      <p>{book[1]}</p>
-      <img src={book[2]} />
-      {publisher(book[3])}
+      <p>{book.title}</p>
+      <p>{book.year}</p>
+      <img src={book.cover} />
+      <p>{book.publisher}</p>
+      <p>{book.description}</p>
       <p>_________________________________________________</p>
     </div>
   );
-};
-
-const publisher = (name) => {
-  if (name === "N/A") {
-    return <p>unknown</p>;
-  } else {
-    return <p>{name}</p>;
-  }
 };
 
 export default BookCard;

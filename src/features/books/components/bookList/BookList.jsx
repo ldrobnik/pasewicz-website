@@ -7,13 +7,13 @@ const BookList = () => {
     <>
       <div>Book List</div>
       {BOOKS?.length > 0 ? (
-        <div className="bookContainer">
+        <div>
           {BOOKS.map((book) => (
-            <BookCard book={book} />
+            <BookCard key={book.title} book={book} />
           ))}
         </div>
       ) : (
-        <div className="empty">
+        <div>
           <h2>
             Opps... It looks like an error has occured. Please try refreshing
             the page.
