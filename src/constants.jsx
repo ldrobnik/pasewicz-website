@@ -30,8 +30,7 @@ export const BOOKS = [
   {
     title: "Darkslide",
     year: 2022,
-    cover:
-      "https://s.lubimyczytac.pl/upload/books/5042000/5042683/1024808-352x500.jpg",
+    cover: "darkslide",
     publisher:
       "Wojewódzka Biblioteka Publiczna i Centrum Animacji Kultury w Poznaniu",
     description: (
@@ -45,8 +44,7 @@ export const BOOKS = [
   {
     title: "Pulverkopf",
     year: 2021,
-    cover:
-      "https://s.lubimyczytac.pl/upload/books/157000/157695/1026834-352x500.jpg",
+    cover: "pulverkopf",
     publisher: "Wielka Litera",
     description: (
       <>
@@ -59,8 +57,7 @@ export const BOOKS = [
   {
     title: "Sztuka bycia niepotrzebnym",
     year: 2020,
-    cover:
-      "https://s.lubimyczytac.pl/upload/books/4973000/4973564/980439-352x500.jpg",
+    cover: "sztuka_bycia",
     publisher:
       "Wojewódzka Biblioteka Publiczna i Centrum Animacji Kultury w Poznaniu",
     description: (
@@ -74,8 +71,7 @@ export const BOOKS = [
   {
     title: "Śmierć w Darkroomie. Wydanie rozszerzone",
     year: 2018,
-    cover:
-      "https://s.lubimyczytac.pl/upload/books/4868000/4868656/700902-352x500.jpg",
+    cover: "smierc_w_darkroomie",
     publisher: "Bricolage Publishing",
     description: (
       <>
@@ -88,8 +84,7 @@ export const BOOKS = [
   {
     title: "Miejsce",
     year: 2016,
-    cover:
-      "https://s.lubimyczytac.pl/upload/books/4378000/4378964/979695-352x500.jpg",
+    cover: "miejsce",
     publisher:
       "Wojewódzka Biblioteka Publiczna i Centrum Animacji Kultury w Poznaniu",
     description: (
@@ -103,8 +98,7 @@ export const BOOKS = [
   {
     title: "Och, Mitochondria",
     year: 2015,
-    cover:
-      "https://s.lubimyczytac.pl/upload/books/258000/258167/391447-352x500.jpg",
+    cover: "och_mitochondria",
     publisher: "EMG",
     description: (
       <>
@@ -117,7 +111,7 @@ export const BOOKS = [
   {
     title: "Pałacyk Bertolta Brechta",
     year: 2011,
-    cover: "https://s.lubimyczytac.pl/upload/books/100000/100753/352x500.jpg",
+    cover: "palacyk_bertolta",
     publisher: "EMG",
     description: (
       <>
@@ -130,8 +124,7 @@ export const BOOKS = [
   {
     title: "Muzyka na instrumenty strunowe, perkusję i czelestę",
     year: 2010,
-    cover:
-      "https://s.lubimyczytac.pl/upload/books/80000/80838/980893-352x500.jpg",
+    cover: "muzyka_na_instrumenty",
     publisher:
       "Wojewódzka Biblioteka Publiczna i Centrum Animacji Kultury w Poznaniu",
     description: (
@@ -145,8 +138,7 @@ export const BOOKS = [
   {
     title: "Drobne! Drobne!",
     year: 2008,
-    cover:
-      "https://s.lubimyczytac.pl/upload/books/58000/58215/980892-352x500.jpg",
+    cover: "drobne_drobne",
     publisher:
       "Wojewódzka Biblioteka Publiczna i Centrum Animacji Kultury w Poznaniu",
     description: (
@@ -160,7 +152,7 @@ export const BOOKS = [
   {
     title: "Śmierć w darkroomie",
     year: 2007,
-    cover: "https://s.lubimyczytac.pl/upload/books/27000/27473/352x500.jpg",
+    cover: "smierc_original",
     publisher: "EMG",
     description: (
       <>
@@ -173,8 +165,7 @@ export const BOOKS = [
   {
     title: "Dolna Wilda. Wydanie drugie",
     year: 2006,
-    cover:
-      "https://s.lubimyczytac.pl/upload/books/58000/58310/980890-352x500.jpg",
+    cover: "dolna_wilda",
     publisher:
       "Wojewódzka Biblioteka Publiczna i Centrum Animacji Kultury w Poznaniu",
     description: (
@@ -188,7 +179,7 @@ export const BOOKS = [
   {
     title: "Henry Berryman Pięśni",
     year: 2006,
-    cover: "https://s.lubimyczytac.pl/upload/books/166000/166224/352x500.jpg",
+    cover: "piesni",
     publisher: "Kserokopia.art.pl",
     description: (
       <>
@@ -201,7 +192,7 @@ export const BOOKS = [
   {
     title: "Wiersze dla Róży Filipowicz",
     year: 2004,
-    cover: "https://s.lubimyczytac.pl/upload/books/133000/133745/352x500.jpg",
+    cover: "wiersze_dla_rozy",
     publisher: "Biuro Literackie",
     description: (
       <>
@@ -214,7 +205,7 @@ export const BOOKS = [
   {
     title: "Dolna Wilda",
     year: 2001,
-    cover: "https://readeatslip.files.wordpress.com/2010/06/pasewicz.jpg",
+    cover: "dolna_original",
     publisher: "Fundacja ANIMA, Tygiel Kultury",
     description: (
       <>
