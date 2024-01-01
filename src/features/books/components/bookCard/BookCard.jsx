@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Card, Box, Typography } from "@mui/material";
 
 const BookCard = ({ book }) => {
   // Specifies the cover image source.
@@ -19,15 +20,23 @@ const BookCard = ({ book }) => {
   }, []);
 
   return (
-    <div className="book">
-      <p>_________________________________________________</p>
-      <p>{book.title}</p>
-      <p>{book.year}</p>
-      <img src={imageSrc} />
-      <p>{book.publisher}</p>
-      <p>{book.description}</p>
-      <p>_________________________________________________</p>
-    </div>
+    <Card sx={{ margin: 5, padding: 5 }}>
+      <Typography variant="h2" component="div" color="secondary" gutterBottom>
+        {book.title}
+      </Typography>
+      <Typography variant="subtitle1" gutterBottom>
+        {book.publisher}
+      </Typography>
+      <Typography variant="subtitle2" gutterBottom>
+        <em>{book.type}</em>, {book.year}
+      </Typography>
+      <Box>
+        <img src={imageSrc} alt={`Okładka książki ${book.title}`} />
+      </Box>
+      <Typography variant="body1" gutterBottom>
+        {book.description}
+      </Typography>
+    </Card>
   );
 };
 
