@@ -38,9 +38,17 @@ export const BOOKS = [
       <>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi in
         delectus necessitatibus eveniet voluptas <strong>placeat</strong> optio
-        et quam ullam!
+        et quam ullam! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Excepturi in delectus necessitatibus eveniet voluptas{" "}
+        <strong>placeat</strong> optio et quam ullam! Lorem ipsum dolor sit,
+        amet consectetur adipisicing elit. Excepturi in delectus necessitatibus
+        eveniet voluptas <strong>placeat</strong> optio et quam ullam!
       </>
     ),
+    cta: {
+      message: "Kup egzemplarz",
+      url: "https://wbp.poznan.pl/ksiazki/pasewicz-edward-darkslide/",
+    },
   },
   {
     title: "Pulverkopf",
@@ -52,9 +60,17 @@ export const BOOKS = [
       <>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi in
         delectus necessitatibus eveniet voluptas <strong>placeat</strong> optio
-        et quam ullam!
+        et quam ullam! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Excepturi in delectus necessitatibus eveniet voluptas{" "}
+        <strong>placeat</strong> optio et quam ullam! Lorem ipsum dolor sit,
+        amet consectetur adipisicing elit. Excepturi in delectus necessitatibus
+        eveniet voluptas <strong>placeat</strong> optio et quam ullam!
       </>
     ),
+    cta: {
+      message: "Kup egzemplarz",
+      url: "https://wielkalitera.pl/sklep/literatura-piekna-polska/pulverkopf-ksiazka/",
+    },
   },
   {
     title: "Sztuka bycia niepotrzebnym",
@@ -67,7 +83,11 @@ export const BOOKS = [
       <>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi in
         delectus necessitatibus eveniet voluptas <strong>placeat</strong> optio
-        et quam ullam!
+        et quam ullam! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Excepturi in delectus necessitatibus eveniet voluptas{" "}
+        <strong>placeat</strong> optio et quam ullam! Lorem ipsum dolor sit,
+        amet consectetur adipisicing elit. Excepturi in delectus necessitatibus
+        eveniet voluptas <strong>placeat</strong> optio et quam ullam!
       </>
     ),
   },
@@ -81,7 +101,11 @@ export const BOOKS = [
       <>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi in
         delectus necessitatibus eveniet voluptas <strong>placeat</strong> optio
-        et quam ullam!
+        et quam ullam! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Excepturi in delectus necessitatibus eveniet voluptas{" "}
+        <strong>placeat</strong> optio et quam ullam! Lorem ipsum dolor sit,
+        amet consectetur adipisicing elit. Excepturi in delectus necessitatibus
+        eveniet voluptas <strong>placeat</strong> optio et quam ullam!
       </>
     ),
   },
@@ -96,7 +120,11 @@ export const BOOKS = [
       <>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi in
         delectus necessitatibus eveniet voluptas <strong>placeat</strong> optio
-        et quam ullam!
+        et quam ullam! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Excepturi in delectus necessitatibus eveniet voluptas{" "}
+        <strong>placeat</strong> optio et quam ullam! Lorem ipsum dolor sit,
+        amet consectetur adipisicing elit. Excepturi in delectus necessitatibus
+        eveniet voluptas <strong>placeat</strong> optio et quam ullam!
       </>
     ),
   },
@@ -110,7 +138,11 @@ export const BOOKS = [
       <>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi in
         delectus necessitatibus eveniet voluptas <strong>placeat</strong> optio
-        et quam ullam!
+        et quam ullam! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Excepturi in delectus necessitatibus eveniet voluptas{" "}
+        <strong>placeat</strong> optio et quam ullam! Lorem ipsum dolor sit,
+        amet consectetur adipisicing elit. Excepturi in delectus necessitatibus
+        eveniet voluptas <strong>placeat</strong> optio et quam ullam!
       </>
     ),
   },
@@ -124,7 +156,11 @@ export const BOOKS = [
       <>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi in
         delectus necessitatibus eveniet voluptas <strong>placeat</strong> optio
-        et quam ullam!
+        et quam ullam! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Excepturi in delectus necessitatibus eveniet voluptas{" "}
+        <strong>placeat</strong> optio et quam ullam! Lorem ipsum dolor sit,
+        amet consectetur adipisicing elit. Excepturi in delectus necessitatibus
+        eveniet voluptas <strong>placeat</strong> optio et quam ullam!
       </>
     ),
   },
@@ -139,7 +175,11 @@ export const BOOKS = [
       <>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi in
         delectus necessitatibus eveniet voluptas <strong>placeat</strong> optio
-        et quam ullam!
+        et quam ullam! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Excepturi in delectus necessitatibus eveniet voluptas{" "}
+        <strong>placeat</strong> optio et quam ullam! Lorem ipsum dolor sit,
+        amet consectetur adipisicing elit. Excepturi in delectus necessitatibus
+        eveniet voluptas <strong>placeat</strong> optio et quam ullam!
       </>
     ),
   },
@@ -154,7 +194,11 @@ export const BOOKS = [
       <>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi in
         delectus necessitatibus eveniet voluptas <strong>placeat</strong> optio
-        et quam ullam!
+        et quam ullam! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Excepturi in delectus necessitatibus eveniet voluptas{" "}
+        <strong>placeat</strong> optio et quam ullam! Lorem ipsum dolor sit,
+        amet consectetur adipisicing elit. Excepturi in delectus necessitatibus
+        eveniet voluptas <strong>placeat</strong> optio et quam ullam!
       </>
     ),
   },
@@ -168,7 +212,11 @@ export const BOOKS = [
       <>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi in
         delectus necessitatibus eveniet voluptas <strong>placeat</strong> optio
-        et quam ullam!
+        et quam ullam! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Excepturi in delectus necessitatibus eveniet voluptas{" "}
+        <strong>placeat</strong> optio et quam ullam! Lorem ipsum dolor sit,
+        amet consectetur adipisicing elit. Excepturi in delectus necessitatibus
+        eveniet voluptas <strong>placeat</strong> optio et quam ullam!
       </>
     ),
   },
@@ -183,7 +231,11 @@ export const BOOKS = [
       <>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi in
         delectus necessitatibus eveniet voluptas <strong>placeat</strong> optio
-        et quam ullam!
+        et quam ullam! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Excepturi in delectus necessitatibus eveniet voluptas{" "}
+        <strong>placeat</strong> optio et quam ullam! Lorem ipsum dolor sit,
+        amet consectetur adipisicing elit. Excepturi in delectus necessitatibus
+        eveniet voluptas <strong>placeat</strong> optio et quam ullam!
       </>
     ),
   },
@@ -197,7 +249,11 @@ export const BOOKS = [
       <>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi in
         delectus necessitatibus eveniet voluptas <strong>placeat</strong> optio
-        et quam ullam!
+        et quam ullam! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Excepturi in delectus necessitatibus eveniet voluptas{" "}
+        <strong>placeat</strong> optio et quam ullam! Lorem ipsum dolor sit,
+        amet consectetur adipisicing elit. Excepturi in delectus necessitatibus
+        eveniet voluptas <strong>placeat</strong> optio et quam ullam!
       </>
     ),
   },
@@ -211,7 +267,11 @@ export const BOOKS = [
       <>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi in
         delectus necessitatibus eveniet voluptas <strong>placeat</strong> optio
-        et quam ullam!
+        et quam ullam! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Excepturi in delectus necessitatibus eveniet voluptas{" "}
+        <strong>placeat</strong> optio et quam ullam! Lorem ipsum dolor sit,
+        amet consectetur adipisicing elit. Excepturi in delectus necessitatibus
+        eveniet voluptas <strong>placeat</strong> optio et quam ullam!
       </>
     ),
   },
@@ -225,7 +285,11 @@ export const BOOKS = [
       <>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi in
         delectus necessitatibus eveniet voluptas <strong>placeat</strong> optio
-        et quam ullam!
+        et quam ullam! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Excepturi in delectus necessitatibus eveniet voluptas{" "}
+        <strong>placeat</strong> optio et quam ullam! Lorem ipsum dolor sit,
+        amet consectetur adipisicing elit. Excepturi in delectus necessitatibus
+        eveniet voluptas <strong>placeat</strong> optio et quam ullam!
       </>
     ),
   },
@@ -239,7 +303,11 @@ export const BOOKS = [
       <>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi in
         delectus necessitatibus eveniet voluptas <strong>placeat</strong> optio
-        et quam ullam!
+        et quam ullam! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Excepturi in delectus necessitatibus eveniet voluptas{" "}
+        <strong>placeat</strong> optio et quam ullam! Lorem ipsum dolor sit,
+        amet consectetur adipisicing elit. Excepturi in delectus necessitatibus
+        eveniet voluptas <strong>placeat</strong> optio et quam ullam!
       </>
     ),
   },
