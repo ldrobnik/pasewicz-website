@@ -43,6 +43,8 @@ const BookCard = ({ book }) => {
             color="secondary"
             size="large"
             href={book.cta.url}
+            target="_blank"
+            rel="noopener noreferrer"
           >
             {book.cta.message}
           </Button>
