@@ -20,7 +20,7 @@ const StyledImage = styled("img")({
 });
 
 // Book card component
-const BookCard = ({ book }) => {
+const BookCard = ({ book, index }) => {
   // Specifies the cover image source
   const [imageSrc, setImageSrc] = useState("");
 
@@ -41,9 +41,16 @@ const BookCard = ({ book }) => {
   return (
     <StyledPaper elevation={4}>
       {/* Row 1: Image and book description side by side */}
-      <Box sx={{ display: "flex", alignItems: "center", marginBottom: "20px" }}>
+      <Box
+        sx={{
+          display: "flex",
+          alignItems: "center",
+          marginBottom: "20px",
+          flexDirection: index % 2 !== 0 ? "row-reverse" : "row", // Reverse for odd index
+        }}
+      >
         <StyledImage src={imageSrc} alt={`Okładka książki ${book.title}`} />
-        <Box sx={{ flex: 1 }}>
+        <Box sx={{ flex: 1, textAlign: index % 2 !== 0 ? "right" : "left" }}>
           <Typography variant="h4" component="div" gutterBottom>
             {book.title}
           </Typography>
@@ -59,7 +66,7 @@ const BookCard = ({ book }) => {
         </Box>
       </Box>
 
-      {/* Row 2: Centered Button */}
+      {/* Row 2: Centered button */}
       {book.cta && (
         <Box
           sx={{
