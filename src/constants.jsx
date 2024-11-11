@@ -28,6 +28,28 @@ export const SOCIALS = [
 
 export const BOOKS = [
   {
+    title: "Czarne wesele",
+    year: 2024,
+    type: "powieść",
+    cover: "czarne_wesele",
+    publisher: "Wielka Litera",
+    description: (
+      <>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi in
+        delectus necessitatibus eveniet voluptas <strong>placeat</strong> optio
+        et quam ullam! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Excepturi in delectus necessitatibus eveniet voluptas{" "}
+        <strong>placeat</strong> optio et quam ullam! Lorem ipsum dolor sit,
+        amet consectetur adipisicing elit. Excepturi in delectus necessitatibus
+        eveniet voluptas <strong>placeat</strong> optio et quam ullam!
+      </>
+    ),
+    cta: {
+      message: "Kup egzemplarz",
+      url: "https://wielkalitera.pl/produkt/czarne-wesele-ksiazka/",
+    },
+  },
+  {
     title: "Darkslide",
     year: 2022,
     type: "wiersze",
