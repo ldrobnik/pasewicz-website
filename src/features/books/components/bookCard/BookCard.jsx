@@ -3,21 +3,22 @@ import { Button, Box, Paper, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 
 // Styled component for the card to apply borders and background color
-const StyledPaper = styled(Paper)(({ theme, isOdd }) => ({
-  margin: "20px auto",
+const StyledPaper = styled(Paper)(({ theme }) => ({
+  margin: `${theme.spacing(3)} auto`,
   padding: theme.spacing(3),
   backgroundColor: theme.palette.background.default,
   border: `4px solid ${theme.palette.primary.main}`,
   color: theme.palette.primary.main,
-  maxWidth: "700px",
+  maxWidth: "44rem",
   overflow: "hidden",
 }));
 
 // Image styling
-const StyledImage = styled("img")({
-  maxWidth: "150px",
+const StyledImage = styled("img")(({ cta }) => ({
+  maxWidth: "8rem",
   margin: "0 32px",
-});
+  transform: cta ? "translateY(22px)" : "none",
+}));
 
 // Book card component
 const BookCard = ({ book, index }) => {
@@ -49,7 +50,11 @@ const BookCard = ({ book, index }) => {
           flexDirection: index % 2 !== 0 ? "row-reverse" : "row", // Reverse for odd index
         }}
       >
-        <StyledImage src={imageSrc} alt={`Okładka książki ${book.title}`} />
+        <StyledImage
+          cta={book.cta}
+          src={imageSrc}
+          alt={`Okładka książki ${book.title}`}
+        />
         <Box sx={{ flex: 1, textAlign: index % 2 !== 0 ? "right" : "left" }}>
           <Typography variant="h4" component="div" gutterBottom>
             {book.title}
