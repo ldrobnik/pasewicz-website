@@ -11,6 +11,12 @@ const StyledPaper = styled(Paper)(({ theme }) => ({
   color: theme.palette.primary.main,
   maxWidth: "44rem",
   overflow: "hidden",
+
+  // Add custom selection styling
+  "& ::selection": {
+    backgroundColor: theme.palette.primary.main,
+    color: theme.palette.background.default,
+  },
 }));
 
 // Image styling
