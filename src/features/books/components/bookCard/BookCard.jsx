@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Button, Box, Paper, Typography } from "@mui/material";
+import { Button, Box, Paper, Typography, useMediaQuery } from "@mui/material";
 import { styled } from "@mui/system";
 
 // Styled component for the card to apply borders and background color
@@ -20,9 +20,9 @@ const StyledPaper = styled(Paper)(({ theme }) => ({
 }));
 
 // Image styling
-const StyledImage = styled("img")(({ cta }) => ({
-  maxWidth: "8rem",
-  margin: "0 32px",
+const StyledImage = styled("img")(({ cta, isLargeScreen }) => ({
+  maxWidth: isLargeScreen ? "8rem" : "6rem",
+  margin: isLargeScreen ? "0 2rem" : "0 auto 2rem",
   transform: cta ? "translateY(22px)" : "none",
 }));
 
@@ -30,6 +30,9 @@ const StyledImage = styled("img")(({ cta }) => ({
 const BookCard = ({ book, index }) => {
   // Specifies the cover image source
   const [imageSrc, setImageSrc] = useState("");
+
+  // Check for screen width
+  const isLargeScreen = useMediaQuery("(min-width:620px)");
 
   // Imports the appropriate cover image
   const importImage = (fileName) => {
@@ -47,22 +50,63 @@ const BookCard = ({ book, index }) => {
 
   return (
     <StyledPaper elevation={4}>
-      {/* Row 1: Image and book description side by side */}
+      {/* Row for image rendered on small screens */}
+      {!isLargeScreen && (
+        <Box
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            marginBottom: "20px",
+          }}
+        >
+          <StyledImage
+            cta={book.cta}
+            isLargeScreen={isLargeScreen}
+            src={imageSrc}
+            alt={`Okładka książki ${book.title}`}
+          />
+        </Box>
+      )}
+      {/* Row with an image and book description side by side */}
       <Box
         sx={{
           display: "flex",
           alignItems: "center",
           marginBottom: "20px",
-          flexDirection: index % 2 !== 0 ? "row-reverse" : "row", // Reverse for odd index
+          flexDirection: index % 2 !== 0 ? "row-reverse" : "row", // Reverse every other card
         }}
       >
-        <StyledImage
-          cta={book.cta}
-          src={imageSrc}
-          alt={`Okładka książki ${book.title}`}
-        />
-        <Box sx={{ flex: 1, textAlign: index % 2 !== 0 ? "right" : "left" }}>
-          <Typography variant="h4" component="div" gutterBottom>
+        {/* Render the image on large screens */}
+        {isLargeScreen && (
+          <StyledImage
+            cta={book.cta}
+            isLargeScreen={isLargeScreen}
+            src={imageSrc}
+            alt={`Okładka książki ${book.title}`}
+          />
+        )}
+        <Box
+          sx={{
+            flex: 1,
+            textAlign: isLargeScreen
+              ? index % 2 !== 0
+                ? "right"
+                : "left"
+              : "center", // Center on small screens
+          }}
+        >
+          <Typography
+            variant="h4"
+            component="div"
+            gutterBottom
+            sx={{
+              textAlign: isLargeScreen
+                ? index % 2 !== 0
+                  ? "right"
+                  : "left"
+                : "center", // Center on small screens
+            }}
+          >
             {book.title}
           </Typography>
           <Typography variant="subtitle1" gutterBottom>
@@ -77,7 +121,7 @@ const BookCard = ({ book, index }) => {
         </Box>
       </Box>
 
-      {/* Row 2: Centered button */}
+      {/* Row with a centered button */}
       {book.cta && (
         <Box
           sx={{
