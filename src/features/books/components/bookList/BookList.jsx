@@ -1,10 +1,10 @@
+import { Container } from "@mui/material";
 import BookCard from "../bookCard/BookCard";
-
 import { BOOKS } from "../../../../constants";
 
 const BookList = () => {
   return (
-    <>
+    <Container maxWidth="lg">
       <div>Book List</div>
       {BOOKS?.length > 0 ? (
         <div>
@@ -22,7 +22,7 @@ const BookList = () => {
           </h2>
         </div>
       )}
-    </>
+    </Container>
   );
 };
 
