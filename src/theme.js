@@ -32,5 +32,11 @@ export const theme = createTheme({
         fontSize: "0.875rem",
       },
     },
+    button: {
+      fontSize: "1rem",
+      "@media (max-width:600px)": {
+        fontSize: "0.875rem",
+      },
+    },
   },
 });
