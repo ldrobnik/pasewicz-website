@@ -1,16 +1,36 @@
+import { Container, Typography } from "@mui/material";
+import { styled } from "@mui/system";
 import BookCard from "../bookCard/BookCard";
+import { SECTIONS, BOOKS } from "../../../../constants";
 
-import { BOOKS } from "../../../../constants";
+// Styled container for the book card list
+const StyledContainer = styled(Container)(({ theme }) => ({
+  // Add custom selection styling
+  "& ::selection": {
+    backgroundColor: theme.palette.primary.main,
+    color: theme.palette.background.default,
+  },
+}));
 
-const BookList = () => {
+// Styled section header
+const StyledHeader = styled(Typography)(({ theme }) => ({
+  textAlign: "center",
+  color: theme.palette.primary.main,
+}));
+
+const BookList = (theme) => {
   return (
-    <>
-      <div>Book List</div>
+    <StyledContainer maxWidth="lg">
+      <StyledHeader variant="h2" component="div">
+        {SECTIONS[1]}
+      </StyledHeader>
       {BOOKS?.length > 0 ? (
         <div>
-          {BOOKS.sort((a, b) => (a.year < b.year ? 1 : -1)).map((book) => (
-            <BookCard key={book.title} book={book} />
-          ))}
+          {BOOKS.sort((a, b) => (a.year < b.year ? 1 : -1)).map(
+            (book, index) => (
+              <BookCard key={index} book={book} index={index} />
+            )
+          )}
         </div>
       ) : (
         <div>
@@ -20,7 +40,7 @@ const BookList = () => {
           </h2>
         </div>
       )}
-    </>
+    </StyledContainer>
   );
 };
 

@@ -4,13 +4,39 @@ export const theme = createTheme({
   palette: {
     type: "light",
     primary: {
-      main: "#002e3e",
+      main: "#80d8ff",
     },
     secondary: {
-      main: "#e04c32",
+      main: "#1c16c9",
     },
     background: {
-      default: "#ebe3df",
+      default: "#333",
+    },
+  },
+  typography: {
+    h2: {
+      fontSize: "4rem",
+      "@media (max-width:600px)": {
+        fontSize: "2.5rem",
+      },
+    },
+    h4: {
+      fontSize: "2rem",
+      "@media (max-width:600px)": {
+        fontSize: "1.75rem",
+      },
+    },
+    body1: {
+      fontSize: "1rem",
+      "@media (max-width:600px)": {
+        fontSize: "0.875rem",
+      },
+    },
+    button: {
+      fontSize: "1rem",
+      "@media (max-width:600px)": {
+        fontSize: "0.875rem",
+      },
     },
   },
 });

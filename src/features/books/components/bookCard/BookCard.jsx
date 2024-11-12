@@ -1,11 +1,34 @@
 import { useEffect, useState } from "react";
-import { Button, Box, Paper, Typography } from "@mui/material";
+import { Button, Box, Paper, Typography, useMediaQuery } from "@mui/material";
+import { styled } from "@mui/system";
 
-const BookCard = ({ book }) => {
-  // Specifies the cover image source.
+// Styled component for the card to apply borders and background color
+const StyledPaper = styled(Paper)(({ theme }) => ({
+  margin: `${theme.spacing(3)} auto`,
+  padding: theme.spacing(3),
+  backgroundColor: theme.palette.background.default,
+  border: `4px solid ${theme.palette.primary.main}`,
+  color: theme.palette.primary.main,
+  maxWidth: "44rem",
+  overflow: "hidden",
+}));
+
+// Image styling
+const StyledImage = styled("img")(({ cta, isLargeScreen }) => ({
+  maxWidth: isLargeScreen ? "8rem" : "6rem",
+  margin: isLargeScreen ? "0 2rem" : "0 auto 2rem",
+  transform: cta ? "translateY(22px)" : "none",
+}));
+
+// Book card component
+const BookCard = ({ book, index }) => {
+  // Specifies the cover image source
   const [imageSrc, setImageSrc] = useState("");
 
-  // Imports the appropriate cover image.
+  // Check for screen width
+  const isLargeScreen = useMediaQuery("(min-width:620px)");
+
+  // Imports the appropriate cover image
   const importImage = (fileName) => {
     import(`../../../../assets/images/covers/${fileName}.jpg`)
       .then((res) => {
@@ -15,32 +38,95 @@ const BookCard = ({ book }) => {
   };
 
   useEffect(() => {
-    // Imports the image once the component loads.
+    // Imports the image once the component loads
     importImage(book.cover);
-  }, []);
+  }, [book.cover]);
 
   return (
-    <Paper elevation={4} sx={{ margin: 5, padding: 5 }}>
-      <Typography variant="h3" component="div" color="secondary" gutterBottom>
-        {book.title}
-      </Typography>
-      <Typography variant="subtitle1" gutterBottom>
-        {book.publisher}
-      </Typography>
-      <Typography variant="subtitle2" gutterBottom>
-        {book.type}, {book.year}
-      </Typography>
-      <img src={imageSrc} alt={`Okładka książki ${book.title}`} />
-      <Typography variant="body1" gutterBottom>
-        {book.description}
-      </Typography>
+    <StyledPaper elevation={4}>
+      {/* Row for image rendered on small screens */}
+      {!isLargeScreen && (
+        <Box
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            marginBottom: "20px",
+          }}
+        >
+          <StyledImage
+            cta={book.cta}
+            isLargeScreen={isLargeScreen}
+            src={imageSrc}
+            alt={`Okładka książki ${book.title}`}
+          />
+        </Box>
+      )}
+      {/* Row with an image and book description side by side */}
+      <Box
+        sx={{
+          display: "flex",
+          alignItems: "center",
+          marginBottom: "20px",
+          flexDirection: index % 2 !== 0 ? "row-reverse" : "row", // Reverse every other card
+        }}
+      >
+        {/* Render the image on large screens */}
+        {isLargeScreen && (
+          <StyledImage
+            cta={book.cta}
+            isLargeScreen={isLargeScreen}
+            src={imageSrc}
+            alt={`Okładka książki ${book.title}`}
+          />
+        )}
+        <Box
+          sx={{
+            flex: 1,
+            textAlign: isLargeScreen
+              ? index % 2 !== 0
+                ? "right"
+                : "left"
+              : "center", // Center on small screens
+          }}
+        >
+          <Typography
+            variant="h4"
+            component="div"
+            gutterBottom
+            sx={{
+              textAlign: isLargeScreen
+                ? index % 2 !== 0
+                  ? "right"
+                  : "left"
+                : "center", // Center on small screens
+            }}
+          >
+            {book.title}
+          </Typography>
+          <Typography variant="subtitle1" gutterBottom>
+            {book.publisher}
+          </Typography>
+          <Typography variant="subtitle2" gutterBottom>
+            {book.type}, {book.year}
+          </Typography>
+          <Typography variant="body1" sx={{ marginTop: "8px" }}>
+            {book.description}
+          </Typography>
+        </Box>
+      </Box>
+
+      {/* Row with a centered button */}
       {book.cta && (
         <Box
-          sx={{ display: "flex", justifyContent: "center", padding: "20px" }}
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "20px",
+          }}
         >
           <Button
             variant="contained"
-            color="secondary"
+            color="primary"
             size="large"
             href={book.cta.url}
             target="_blank"
@@ -50,7 +136,7 @@ const BookCard = ({ book }) => {
           </Button>
         </Box>
       )}
-    </Paper>
+    </StyledPaper>
   );
 };
 
