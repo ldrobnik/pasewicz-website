@@ -13,4 +13,24 @@ export const theme = createTheme({
       default: "#333",
     },
   },
+  typography: {
+    h2: {
+      fontSize: "4rem",
+      "@media (max-width:600px)": {
+        fontSize: "2.5rem",
+      },
+    },
+    h4: {
+      fontSize: "2rem",
+      "@media (max-width:600px)": {
+        fontSize: "1.75rem",
+      },
+    },
+    body1: {
+      fontSize: "1rem",
+      "@media (max-width:600px)": {
+        fontSize: "0.875rem",
+      },
+    },
+  },
 });
