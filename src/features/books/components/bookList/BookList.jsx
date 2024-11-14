@@ -3,7 +3,6 @@ import { styled } from "@mui/system";
 import BookCard from "../bookCard/BookCard";
 import { SECTIONS, BOOKS } from "../../../../constants";
 
-// Styled container for the book card list
 const StyledContainer = styled(Container)(({ theme }) => ({
   // Add custom selection styling
   "& ::selection": {
@@ -12,7 +11,6 @@ const StyledContainer = styled(Container)(({ theme }) => ({
   },
 }));
 
-// Styled section header
 const StyledHeader = styled(Typography)(({ theme }) => ({
   textAlign: "center",
   color: theme.palette.primary.main,

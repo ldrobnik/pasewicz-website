@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { Button, Box, Paper, Typography, useMediaQuery } from "@mui/material";
 import { styled } from "@mui/system";
 
-// Styled component for the card to apply borders and background color
 const StyledPaper = styled(Paper)(({ theme }) => ({
   margin: `${theme.spacing(3)} auto`,
   padding: theme.spacing(3),
@@ -14,19 +13,16 @@ const StyledPaper = styled(Paper)(({ theme }) => ({
   overflow: "hidden",
 }));
 
-// Styled image
 const StyledImage = styled("img")(({ cta, isLargeScreen }) => ({
   maxWidth: isLargeScreen ? "8rem" : "6rem",
   margin: isLargeScreen ? "0 2rem" : "0 auto",
   transform: isLargeScreen && cta ? "translateY(22px)" : "none",
 }));
 
-// Styled button
 const StyledButton = styled(Button)(() => ({
   borderRadius: 0,
 }));
 
-// Book card component
 const BookCard = ({ book, index }) => {
   // Specifies the cover image source
   const [imageSrc, setImageSrc] = useState("");
