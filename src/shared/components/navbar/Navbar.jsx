@@ -14,9 +14,36 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
+import { styled } from "@mui/system";
 
 const drawerWidth = 240;
 import { SECTIONS } from "../../../constants";
+import { Draw } from "@mui/icons-material";
+
+const StyledToolbar = styled(Toolbar)(({ theme }) => ({
+  // Add custom selection styling
+  "& ::selection": {
+    backgroundColor: theme.palette.secondary.main,
+    color: theme.palette.primary.main,
+  },
+}));
+
+const StyledDrawer = styled(Drawer)(({ theme }) => ({
+  // Change the drawer background
+  "& .MuiPaper-root": {
+    backgroundColor: theme.palette.primary.main,
+  },
+
+  // Add custom selection styling
+  "& ::selection": {
+    backgroundColor: theme.palette.secondary.main,
+    color: theme.palette.primary.main,
+  },
+}));
+
+const StyledButton = styled(Button)(({ theme }) => ({
+  color: theme.palette.secondary.main,
+}));
 
 const Navbar = (props) => {
   const { window } = props;
@@ -51,7 +78,7 @@ const Navbar = (props) => {
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
       <AppBar component="nav">
-        <Toolbar>
+        <StyledToolbar>
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -70,15 +97,13 @@ const Navbar = (props) => {
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {SECTIONS.map((item) => (
-              <Button key={item} sx={{ color: "#fff" }}>
-                {item}
-              </Button>
+              <StyledButton key={item}>{item}</StyledButton>
             ))}
           </Box>
-        </Toolbar>
+        </StyledToolbar>
       </AppBar>
       <nav>
-        <Drawer
+        <StyledDrawer
           container={container}
           variant="temporary"
           open={mobileOpen}
@@ -95,7 +120,7 @@ const Navbar = (props) => {
           }}
         >
           {drawer}
-        </Drawer>
+        </StyledDrawer>
       </nav>
     </Box>
   );
