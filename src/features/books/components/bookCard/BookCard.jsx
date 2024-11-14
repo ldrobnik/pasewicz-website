@@ -7,17 +7,23 @@ const StyledPaper = styled(Paper)(({ theme }) => ({
   margin: `${theme.spacing(3)} auto`,
   padding: theme.spacing(3),
   backgroundColor: theme.palette.background.default,
-  border: `4px solid ${theme.palette.primary.main}`,
+  border: `5px solid ${theme.palette.primary.main}`,
+  borderRadius: 0,
   color: theme.palette.primary.main,
   maxWidth: "44rem",
   overflow: "hidden",
 }));
 
-// Image styling
+// Styled image
 const StyledImage = styled("img")(({ cta, isLargeScreen }) => ({
   maxWidth: isLargeScreen ? "8rem" : "6rem",
-  margin: isLargeScreen ? "0 2rem" : "0 auto 2rem",
-  transform: cta ? "translateY(22px)" : "none",
+  margin: isLargeScreen ? "0 2rem" : "0 auto",
+  transform: isLargeScreen && cta ? "translateY(22px)" : "none",
+}));
+
+// Styled button
+const StyledButton = styled(Button)(() => ({
+  borderRadius: 0,
 }));
 
 // Book card component
@@ -124,7 +130,7 @@ const BookCard = ({ book, index }) => {
             marginTop: "20px",
           }}
         >
-          <Button
+          <StyledButton
             variant="contained"
             color="primary"
             size="large"
@@ -133,7 +139,7 @@ const BookCard = ({ book, index }) => {
             rel="noopener noreferrer"
           >
             {book.cta.message}
-          </Button>
+          </StyledButton>
         </Box>
       )}
     </StyledPaper>

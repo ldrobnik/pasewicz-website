@@ -1,5 +1,5 @@
 // Section names
-export const SECTIONS = ["Biogram", "Publikacje"];
+export const SECTIONS = ["O autorze", "Książki"];
 
 export const BIO = (
   <>
