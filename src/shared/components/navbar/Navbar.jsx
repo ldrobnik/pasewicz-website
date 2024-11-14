@@ -29,8 +29,15 @@ const StyledToolbar = styled(Toolbar)(({ theme }) => ({
 }));
 
 const StyledDrawer = styled(Drawer)(({ theme }) => ({
+  // Change the drawer background
   "& .MuiPaper-root": {
     backgroundColor: theme.palette.primary.main,
+  },
+
+  // Add custom selection styling
+  "& ::selection": {
+    backgroundColor: theme.palette.secondary.main,
+    color: theme.palette.primary.main,
   },
 }));
 
