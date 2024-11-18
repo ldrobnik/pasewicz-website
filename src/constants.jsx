@@ -1,15 +1,19 @@
 // Section names
 export const SECTIONS = ["O autorze", "Książki"];
 
-export const BIO = (
-  <>
-    <strong>Edward Pasewicz</strong> sit, amet consectetur adipisicing elit.
-    Excepturi in delectus necessitatibus eveniet voluptas placeat optio et quam
-    ullam! Excepturi in delectus necessitatibus eveniet voluptas placeat optio
-    et quam ullam! Excepturi in delectus necessitatibus eveniet voluptas placeat
-    optio et quam ullam!
-  </>
-);
+export const BIO = {
+  title: "Edward Pasewicz",
+  subtitle: "poeta, prozaik, dramaturg, kompozytor",
+  body: (
+    <>
+      <strong>Edward Pasewicz</strong> sit, amet consectetur adipisicing elit.
+      Excepturi in delectus necessitatibus eveniet voluptas placeat optio et
+      quam ullam! Excepturi in delectus necessitatibus eveniet voluptas placeat
+      optio et quam ullam! Excepturi in delectus necessitatibus eveniet voluptas
+      placeat optio et quam ullam!
+    </>
+  ),
+};
 
 export const SOCIALS = [
   {

@@ -1,6 +1,7 @@
 import { BIO } from "../../../../constants";
 import { Box, Typography, useMediaQuery } from "@mui/material";
 import { styled } from "@mui/system";
+import AuthorPhoto from "../../authorPhoto/AuthorPhoto";
 
 const Bio = () => {
   // Check for screen width
@@ -8,8 +9,10 @@ const Bio = () => {
 
   return (
     <Box>
-      <Box></Box>
-      <Box>{BIO}</Box>
+      <Box>
+        <AuthorPhoto />
+      </Box>
+      <Box>{BIO.body}</Box>
     </Box>
   );
 };
