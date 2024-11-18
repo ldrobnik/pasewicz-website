@@ -13,6 +13,10 @@ export const BIO = (
 
 export const SOCIALS = [
   {
+    name: "E-mail",
+    url: "mailto:edward.pasewicz@gmail.com",
+  },
+  {
     name: "Facebook",
     url: "https://www.facebook.com/edward.pasewicz",
   },
