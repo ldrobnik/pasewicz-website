@@ -1,17 +1,29 @@
 // Section names
 export const SECTIONS = ["O autorze", "Książki"];
 
-export const BIO = (
-  <>
-    <strong>Edward Pasewicz</strong> sit, amet consectetur adipisicing elit.
-    Excepturi in delectus necessitatibus eveniet voluptas placeat optio et quam
-    ullam! Excepturi in delectus necessitatibus eveniet voluptas placeat optio
-    et quam ullam! Excepturi in delectus necessitatibus eveniet voluptas placeat
-    optio et quam ullam!
-  </>
-);
+export const BIO = {
+  title: "Edward Pasewicz",
+  subtitle: "poeta, prozaik, dramaturg, kompozytor",
+  body: (
+    <>
+      Sit, amet consectetur adipisicing elit. Excepturi in delectus
+      necessitatibus eveniet voluptas placeat optio et quam ullam! Excepturi in
+      delectus necessitatibus eveniet voluptas placeat optio et quam ullam!
+      Excepturi in delectus necessitatibus eveniet voluptas placeat optio et
+      quam ullam! In delectus necessitatibus eveniet voluptas placeat optio et
+      quam ullam! Excepturi in delectus necessitatibus eveniet voluptas placeat
+      optio et quam ullam! Excepturi in delectus necessitatibus eveniet voluptas
+      placeat optio et quam ullam! Excepturi in delectus necessitatibus eveniet
+      voluptas placeat optio et quam ullam!
+    </>
+  ),
+};
 
 export const SOCIALS = [
+  {
+    name: "E-mail",
+    url: "mailto:edward.pasewicz@gmail.com",
+  },
   {
     name: "Facebook",
     url: "https://www.facebook.com/edward.pasewicz",
