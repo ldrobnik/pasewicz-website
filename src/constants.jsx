@@ -17,6 +17,7 @@ export const BIO = {
       voluptas placeat optio et quam ullam!
     </>
   ),
+  altText: "Zdjęcie Edwarda Pasewicza",
 };
 
 export const SOCIALS = [
