@@ -6,11 +6,15 @@ export const BIO = {
   subtitle: "poeta, prozaik, dramaturg, kompozytor",
   body: (
     <>
-      <strong>Edward Pasewicz</strong> sit, amet consectetur adipisicing elit.
+      Sit, amet consectetur adipisicing elit. Excepturi in delectus
+      necessitatibus eveniet voluptas placeat optio et quam ullam! Excepturi in
+      delectus necessitatibus eveniet voluptas placeat optio et quam ullam!
       Excepturi in delectus necessitatibus eveniet voluptas placeat optio et
+      quam ullam! In delectus necessitatibus eveniet voluptas placeat optio et
       quam ullam! Excepturi in delectus necessitatibus eveniet voluptas placeat
       optio et quam ullam! Excepturi in delectus necessitatibus eveniet voluptas
-      placeat optio et quam ullam!
+      placeat optio et quam ullam! Excepturi in delectus necessitatibus eveniet
+      voluptas placeat optio et quam ullam!
     </>
   ),
 };

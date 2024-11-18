@@ -15,7 +15,12 @@ const StyledImage = styled("img")(() => ({
 const AuthorPhoto = () => {
   return (
     <StyledWrapper>
-      <StyledImage src={authorPhoto} />
+      <StyledImage
+        src={authorPhoto}
+        sx={{
+          maxWidth: { xs: "10rem", sm: "14rem" },
+        }}
+      />
     </StyledWrapper>
   );
 };
