@@ -14,16 +14,20 @@ const StyledContainer = styled(Container)(({ theme }) => ({
 
 const About = () => {
   return (
-    <StyledContainer
-      maxWidth="md"
-      sx={{
-        marginTop: { xs: "56px", sm: "64px" }, // Shift content below AppBar
-        padding: 2,
-      }}
-    >
-      <Bio />
-      <Socials />
-    </StyledContainer>
+    <>
+      <div id="oautorze"></div>
+      <StyledContainer
+        maxWidth="md"
+        sx={{
+          marginTop: "1rem",
+          paddingTop: { xs: "56px", sm: "64px" }, // Shift content below AppBar
+          padding: 2,
+        }}
+      >
+        <Bio />
+        <Socials />
+      </StyledContainer>
+    </>
   );
 };
 

@@ -1,5 +1,7 @@
-// Section names
-export const SECTIONS = ["O autorze", "Książki"];
+export const SECTIONS = [
+  { name: "O autorze", link: "#oautorze" },
+  { name: "Książki", link: "#ksiazki" },
+];
 
 export const BIO = {
   title: "Edward Pasewicz",
