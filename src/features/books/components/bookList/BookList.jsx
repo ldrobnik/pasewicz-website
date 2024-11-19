@@ -16,7 +16,7 @@ const StyledHeader = styled(Typography)(({ theme }) => ({
   color: theme.palette.primary.main,
 }));
 
-const BookList = (theme) => {
+const BookList = () => {
   return (
     <StyledContainer maxWidth="lg">
       <StyledHeader variant="h2" component="div">

@@ -20,7 +20,7 @@ const About = () => {
         maxWidth="md"
         sx={{
           marginTop: "1rem",
-          paddingTop: { xs: "56px", sm: "64px" }, // Shift content below AppBar
+          paddingTop: { xs: "56px", sm: "64px" }, // Shift content below the navbar
           padding: 2,
         }}
       >

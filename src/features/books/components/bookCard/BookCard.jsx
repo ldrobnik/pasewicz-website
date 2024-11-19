@@ -19,6 +19,14 @@ const StyledImage = styled("img")(({ cta, isLargeScreen }) => ({
   transform: isLargeScreen && cta ? "translateY(22px)" : "none",
 }));
 
+const StyledWrapper = styled(Box)(({ theme, margin }) => ({
+  display: "flex",
+  alignItems: "center",
+  // Adds a top or bottom margin depending on the margin parameter value
+  marginTop: margin === "top" && theme.spacing(1),
+  marginBottom: margin === "bottom" && theme.spacing(1),
+}));
+
 const StyledButton = styled(Button)(() => ({
   borderRadius: 0,
 }));
@@ -28,7 +36,7 @@ const BookCard = ({ book, index }) => {
   const [imageSrc, setImageSrc] = useState("");
 
   // Check for screen width
-  const isLargeScreen = useMediaQuery("(min-width:620px)");
+  const isLargeScreen = useMediaQuery("(min-width:600px)");
 
   // Imports the appropriate cover image
   const importImage = (fileName) => {
@@ -48,27 +56,18 @@ const BookCard = ({ book, index }) => {
     <StyledPaper elevation={4}>
       {/* Row for image rendered on small screens */}
       {!isLargeScreen && (
-        <Box
-          sx={{
-            display: "flex",
-            alignItems: "center",
-            marginBottom: "20px",
-          }}
-        >
+        <StyledWrapper margin="bottom">
           <StyledImage
             cta={book.cta}
             isLargeScreen={isLargeScreen}
             src={imageSrc}
             alt={`Okładka książki ${book.title}`}
           />
-        </Box>
+        </StyledWrapper>
       )}
       {/* Row with an image and book description side by side */}
-      <Box
+      <StyledWrapper
         sx={{
-          display: "flex",
-          alignItems: "center",
-          marginBottom: "20px",
           flexDirection: index % 2 !== 0 ? "row-reverse" : "row", // Reverse every other card
         }}
       >
@@ -115,11 +114,12 @@ const BookCard = ({ book, index }) => {
             {book.description}
           </Typography>
         </Box>
-      </Box>
+      </StyledWrapper>
 
-      {/* Row with a centered button */}
+      {/* Row with a button */}
       {book.cta && (
-        <Box
+        <StyledWrapper
+          margin="top"
           sx={{
             display: "flex",
             justifyContent: "center",
@@ -129,14 +129,14 @@ const BookCard = ({ book, index }) => {
           <StyledButton
             variant="contained"
             color="primary"
-            size="large"
+            size="medium"
             href={book.cta.url}
             target="_blank"
             rel="noopener noreferrer"
           >
             {book.cta.message}
           </StyledButton>
-        </Box>
+        </StyledWrapper>
       )}
     </StyledPaper>
   );

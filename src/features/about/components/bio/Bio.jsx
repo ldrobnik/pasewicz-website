@@ -7,24 +7,31 @@ const StyledWrapper = styled(Box)(() => ({
   display: "flex",
 }));
 
-const StyledText = styled(Box)(({ isLargeScreen }) => ({
-  textAlign: isLargeScreen ? "left" : "center",
-  marginLeft: isLargeScreen ? "2rem" : 0,
+const StyledText = styled(Box)(({ theme }) => ({
+  textAlign: "left",
+  marginLeft: theme.spacing(3),
+  [theme.breakpoints.down("sm")]: {
+    textAlign: "center",
+    marginLeft: 0,
+  },
 }));
 
-const StyledTitle = styled(Typography)(({ isLargeScreen }) => ({
-  fontSize: isLargeScreen ? "4rem" : "2.5rem",
+const StyledTitle = styled(Typography)(({ theme }) => ({
+  fontSize: 60,
   paddingBottom: 0,
+  [theme.breakpoints.down("sm")]: {
+    fontSize: 40,
+  },
 }));
 
-const StyledSubtitle = styled("p")(({ isLargeScreen }) => ({
+const StyledSubtitle = styled("p")(() => ({
   marginTop: 0,
   fontStyle: "italic",
 }));
 
 const Bio = () => {
   // Check for screen width
-  const isLargeScreen = useMediaQuery("(min-width:620px)");
+  const isLargeScreen = useMediaQuery("(min-width:600px)");
 
   return (
     <StyledWrapper>
@@ -35,11 +42,11 @@ const Bio = () => {
             alignItems: "center",
           }}
         >
-          <AuthorPhoto isLargeScreen={isLargeScreen} />
+          <AuthorPhoto />
         </Box>
       )}
-      <StyledText isLargeScreen={isLargeScreen}>
-        <StyledTitle variant="h1" component="div" isLargeScreen={isLargeScreen}>
+      <StyledText>
+        <StyledTitle variant="h1" component="div">
           {BIO.title}
         </StyledTitle>
         <StyledSubtitle variant="p">{BIO.subtitle}</StyledSubtitle>
