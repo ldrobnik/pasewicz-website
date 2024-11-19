@@ -129,7 +129,7 @@ const BookCard = ({ book, index }) => {
           <StyledButton
             variant="contained"
             color="primary"
-            size="large"
+            size="medium"
             href={book.cta.url}
             target="_blank"
             rel="noopener noreferrer"
