@@ -20,24 +20,27 @@ const Socials = () => {
   const isLargeScreen = useMediaQuery("(min-width:620px)");
 
   return (
-    <StyledWrapper>
-      {SOCIALS.map((link) => {
-        return (
-          <StyledButton
-            key={link.name}
-            variant="contained"
-            color="primary"
-            size="small"
-            href={link.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            isLargeScreen={isLargeScreen}
-          >
-            {link.name}
-          </StyledButton>
-        );
-      })}
-    </StyledWrapper>
+    <>
+      <StyledWrapper>
+        {SOCIALS.map((link) => {
+          return (
+            <StyledButton
+              key={link.name}
+              variant="contained"
+              color="primary"
+              size="small"
+              href={link.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              isLargeScreen={isLargeScreen}
+            >
+              {link.name}
+            </StyledButton>
+          );
+        })}
+        <div id="ksiazki"></div>
+      </StyledWrapper>
+    </>
   );
 };
 

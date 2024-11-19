@@ -20,7 +20,7 @@ const BookList = (theme) => {
   return (
     <StyledContainer maxWidth="lg">
       <StyledHeader variant="h2" component="div">
-        {SECTIONS[1]}
+        {SECTIONS[1].name}
       </StyledHeader>
       {BOOKS?.length > 0 ? (
         <div>

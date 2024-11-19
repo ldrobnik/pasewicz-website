@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -15,10 +14,9 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { styled } from "@mui/system";
+import { SECTIONS } from "../../../constants";
 
 const drawerWidth = 240;
-import { SECTIONS } from "../../../constants";
-import { Draw } from "@mui/icons-material";
 
 const StyledToolbar = styled(Toolbar)(({ theme }) => ({
   // Add custom selection styling
@@ -61,9 +59,9 @@ const Navbar = (props) => {
       <Divider />
       <List>
         {SECTIONS.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText primary={item} />
+          <ListItem key={item.name} disablePadding>
+            <ListItemButton sx={{ textAlign: "center" }} href={item.link}>
+              <ListItemText primary={item.name} />
             </ListItemButton>
           </ListItem>
         ))}
@@ -97,7 +95,9 @@ const Navbar = (props) => {
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {SECTIONS.map((item) => (
-              <StyledButton key={item}>{item}</StyledButton>
+              <StyledButton key={item.name} href={item.link}>
+                {item.name}
+              </StyledButton>
             ))}
           </Box>
         </StyledToolbar>
