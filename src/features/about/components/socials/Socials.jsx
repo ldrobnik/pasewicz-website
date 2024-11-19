@@ -13,7 +13,7 @@ const StyledWrapper = styled("div")(({ theme }) => ({
 const StyledButton = styled(Button)(({ theme }) => ({
   borderRadius: 0,
   margin: theme.spacing(3),
-  [theme.breakpoints.down("md")]: {
+  [theme.breakpoints.down("sm")]: {
     margin: theme.spacing(1.2),
     fontSize: 12,
   },
