@@ -6,15 +6,18 @@ export const BIO = {
   subtitle: "poeta, prozaik, dramaturg, kompozytor",
   body: (
     <>
-      Sit, amet consectetur adipisicing elit. Excepturi in delectus
-      necessitatibus eveniet voluptas placeat optio et quam ullam! Excepturi in
-      delectus necessitatibus eveniet voluptas placeat optio et quam ullam!
-      Excepturi in delectus necessitatibus eveniet voluptas placeat optio et
-      quam ullam! In delectus necessitatibus eveniet voluptas placeat optio et
-      quam ullam! Excepturi in delectus necessitatibus eveniet voluptas placeat
-      optio et quam ullam! Excepturi in delectus necessitatibus eveniet voluptas
-      placeat optio et quam ullam! Excepturi in delectus necessitatibus eveniet
-      voluptas placeat optio et quam ullam!
+      Curabitur bibendum, justo et dignissim molestie, enim risus porta ex, at
+      pulvinar tellus nisl in nisl. Curabitur placerat convallis orci a
+      consequat. Nullam nec arcu ac lorem feugiat aliquam id sit amet orci.
+      Aenean sed arcu egestas, auctor velit id, condimentum odio. Donec nisl
+      metus, elementum ac porttitor in, iaculis sit amet felis. Integer finibus
+      augue nec ligula cursus, ac bibendum odio venenatis. Donec eget lacus
+      feugiat magna luctus maximus ut vitae nunc. Praesent velit tortor, mollis
+      vitae ultrices eget, laoreet ac nibh. Duis tincidunt auctor est nec
+      iaculis. Cras sollicitudin vel dolor nec aliquet. Sed eget sapien sit amet
+      mauris luctus laoreet. Nam erat nisl, elementum id ipsum ut, vulputate
+      mollis nulla. Proin felis turpis, scelerisque nec facilisis sed, imperdiet
+      id turpis. Vivamus ultrices odio non ipsum semper ultricies.
     </>
   ),
   altText: "Zdjęcie Edwarda Pasewicza",
@@ -347,3 +350,7 @@ export const BOOKS = [
     ),
   },
 ];
+
+export const FOOTER = {
+  copyrightNote: "© 2024",
+};
