@@ -1,6 +1,6 @@
 import { SOCIALS } from "../../../../constants";
 import { styled } from "@mui/system";
-import { Button } from "@mui/material";
+import { IconButton } from "@mui/material";
 
 const StyledWrapper = styled("div")(({ theme }) => ({
   width: "100%",
@@ -10,11 +10,11 @@ const StyledWrapper = styled("div")(({ theme }) => ({
   padding: `${theme.spacing(1)} 0`,
 }));
 
-const StyledButton = styled(Button)(({ theme }) => ({
+const StyledButton = styled(IconButton)(({ theme }) => ({
   borderRadius: 0,
-  margin: theme.spacing(2),
+  margin: theme.spacing(1),
   [theme.breakpoints.down("sm")]: {
-    margin: theme.spacing(1.2),
+    margin: theme.spacing(0.8),
     fontSize: 12,
   },
 }));
@@ -27,14 +27,15 @@ const Socials = () => {
           return (
             <StyledButton
               key={link.name}
-              variant="contained"
+              variant="text"
               color="primary"
               size="small"
               href={link.url}
+              aria-label={link.name}
               target="_blank"
               rel="noopener noreferrer"
             >
-              {link.name}
+              {link.icon}
             </StyledButton>
           );
         })}

@@ -1,3 +1,9 @@
+import EmailIcon from "@mui/icons-material/Email";
+import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+
 export const LOADING = "Ładowanie";
 
 export const SECTIONS = [
@@ -30,18 +36,22 @@ export const BIO = {
 export const SOCIALS = [
   {
     name: "E-mail",
+    icon: <MailOutlineIcon />,
     url: "mailto:edward.pasewicz@gmail.com",
   },
   {
     name: "Facebook",
+    icon: <FacebookIcon />,
     url: "https://www.facebook.com/edward.pasewicz",
   },
   {
     name: "Instagram",
+    icon: <InstagramIcon />,
     url: "https://instagram.com/edward.pasewicz",
   },
   {
     name: "LinkedIn",
+    icon: <LinkedInIcon />,
     url: "https://www.linkedin.com/in/edward-pasewicz-3626b3aa",
   },
 ];
