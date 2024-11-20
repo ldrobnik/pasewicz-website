@@ -43,7 +43,7 @@ const StyledBackdrop = styled("div")(({ theme }) => ({
   zIndex: 100,
   width: "100vw",
   height: "100vh",
-  backgroundColor: "#333",
+  backgroundColor: theme.palette.background.main,
   opacity: 1,
 }));
 const Spinner = () => {
