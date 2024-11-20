@@ -9,7 +9,7 @@ const StyledWrapper = styled("div")(({ theme }) => ({
 
 const StyledImage = styled("img")(() => ({
   display: "block",
-  /* Blend with parent's background: */
+  // Blend with the parent's background
   mixBlendMode: "multiply",
 }));
 
