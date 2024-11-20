@@ -14,7 +14,7 @@ const StyledButton = styled(IconButton)(({ theme }) => ({
   borderRadius: 0,
   margin: theme.spacing(1),
   [theme.breakpoints.down("sm")]: {
-    margin: theme.spacing(0.6),
+    margin: theme.spacing(0.8),
     fontSize: 12,
   },
 }));
