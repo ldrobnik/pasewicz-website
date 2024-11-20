@@ -1,3 +1,5 @@
+export const LOADING = "Ładowanie";
+
 export const SECTIONS = [
   { name: "O autorze", link: "#oautorze" },
   { name: "Książki", link: "#ksiazki" },
