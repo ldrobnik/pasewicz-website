@@ -20,7 +20,7 @@ const AuthorPhoto = () => {
         src={authorPhoto}
         alt={BIO.altText}
         sx={{
-          maxWidth: { xs: "10rem", sm: "14rem" },
+          maxWidth: { sm: "10rem", md: "14rem" },
         }}
       />
     </StyledWrapper>
