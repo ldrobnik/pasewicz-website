@@ -56,6 +56,8 @@ export const SOCIALS = [
   },
 ];
 
+const CTA = "Kup egzemplarz";
+
 export const BOOKS = [
   {
     title: "Czarne wesele",
@@ -75,7 +77,7 @@ export const BOOKS = [
       </>
     ),
     cta: {
-      message: "Kup egzemplarz",
+      message: CTA,
       url: "https://wielkalitera.pl/produkt/czarne-wesele-ksiazka/",
     },
   },
@@ -98,7 +100,7 @@ export const BOOKS = [
       </>
     ),
     cta: {
-      message: "Kup egzemplarz",
+      message: CTA,
       url: "https://wbp.poznan.pl/ksiazki/pasewicz-edward-darkslide/",
     },
   },
@@ -120,8 +122,8 @@ export const BOOKS = [
       </>
     ),
     cta: {
-      message: "Kup egzemplarz",
-      url: "https://wielkalitera.pl/sklep/literatura-piekna-polska/pulverkopf-ksiazka/",
+      message: CTA,
+      url: "https://wielkalitera.pl/produkt/pulverkopf-ksiazka/",
     },
   },
   {
@@ -142,6 +144,10 @@ export const BOOKS = [
         eveniet voluptas <strong>placeat</strong> optio et quam ullam!
       </>
     ),
+    cta: {
+      message: CTA,
+      url: "https://wbp.poznan.pl/ksiazki/pasewicz-edward-sztuka-bycia-niepotrzebnym/",
+    },
   },
   {
     title: "Śmierć w Darkroomie. Wydanie rozszerzone",
@@ -179,6 +185,10 @@ export const BOOKS = [
         eveniet voluptas <strong>placeat</strong> optio et quam ullam!
       </>
     ),
+    cta: {
+      message: CTA,
+      url: "https://wbp.poznan.pl/ksiazki/pasewicz-edward-miejsce/",
+    },
   },
   {
     title: "Och, Mitochondria",
