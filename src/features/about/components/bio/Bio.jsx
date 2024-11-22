@@ -19,7 +19,7 @@ const StyledText = styled(Box)(({ theme }) => ({
 const StyledTitle = styled(Typography)(({ theme }) => ({
   fontSize: 60,
   paddingBottom: 0,
-  [theme.breakpoints.down("md")]: {
+  [theme.breakpoints.down("sm")]: {
     fontSize: 40,
   },
 }));
