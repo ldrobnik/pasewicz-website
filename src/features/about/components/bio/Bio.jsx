@@ -10,7 +10,7 @@ const StyledWrapper = styled(Box)(() => ({
 const StyledText = styled(Box)(({ theme }) => ({
   textAlign: "left",
   marginLeft: theme.spacing(3),
-  [theme.breakpoints.down("sm")]: {
+  [theme.breakpoints.down("md")]: {
     textAlign: "center",
     marginLeft: 0,
   },
@@ -31,7 +31,7 @@ const StyledSubtitle = styled("p")(() => ({
 
 const Bio = () => {
   // Check for screen width
-  const isLargeScreen = useMediaQuery("(min-width:600px)");
+  const isLargeScreen = useMediaQuery("(min-width:900px)");
 
   return (
     <StyledWrapper>
